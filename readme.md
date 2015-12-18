@@ -1,4 +1,15 @@
+Let's say you did the following
+
+```
+$ mkdir project_sprint
+$ cd project_sprint
+$ git init
+$ rails new sample_app
+```
+
 # OH NO
+
+Heroku depends on your git repo being in the base of your Rails app!
 
 ```
 .
@@ -10,6 +21,15 @@
     ├── README.rdoc
     ├── app
 # ...
+```
+
+If you try to deploy to Heroku you'll get an error.
+
+```
+$ heroku create
+$ git add .
+$ git commit -m 'initial commit'
+$ git push heroku master
 ```
 
 You can deploy to heroku with the `git subtree` command
