@@ -1,0 +1,26 @@
+/* In this case, the content determines how many elements are on each line - not the grid */
+body {
+  background: salmon;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.frame img {
+  max-width: 220px;
+  max-height: 220px;
+}
+
+.frame {
+  box-sizing: border-box;
+  border: 30px ridge gold;
+  background: blanchedalmond;
+  padding: 10px;
+  box-shadow: 1px 5px 10px 3px rgba(0,0,0,0.5);
+  margin: 1em;
+}
